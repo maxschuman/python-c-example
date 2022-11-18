@@ -10,6 +10,5 @@ cpp_quicksort.restype = None
 def sort_cpp(array_in):
     length = len(array_in)
     cpp_array = (c_double * length)(*array_in)
-    print(cpp_array[:])
     cpp_quicksort(cpp_array, c_int(length))
     return cpp_array[:]

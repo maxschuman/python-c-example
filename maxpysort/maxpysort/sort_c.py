@@ -10,6 +10,5 @@ c_quicksort.restype = None
 def sort_c(array_in):
     length = len(array_in)
     c_array = (c_double * length)(*array_in)
-    print(c_array[:])
     c_quicksort(c_array, c_int(length))
     return c_array[:]
