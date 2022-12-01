@@ -22,4 +22,4 @@ g++ -fPIC -shared -o quicksort.so quicksort.cpp
 
 To test the code, go to the root of the package and run the `pytest` command at the command line.
 
-To evaluate the speed of the different modeling 
+To evaluate the speed of the different sorting algorithms, you can run the `scripts/speed_test.py` script. 
